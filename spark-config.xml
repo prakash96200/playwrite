@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+
+    <!-- report theme -->
+    <!-- STANDARD, DARK -->
+    <theme>STANDARD</theme>
+
+    <!-- document encoding -->
+    <!-- defaults to UTF-8 -->
+    <encoding>UTF-8</encoding>
+
+    <!-- protocol for script and stylesheets -->
+    <!-- defaults to https -->
+    <!-- HTTP, HTTPS -->
+    <protocol>HTTPS</protocol>
+
+    <!-- offline report -->
+    <timelineEnabled>true</timelineEnabled>
+    
+    <!-- offline report -->
+    <enableOfflineMode>false</enableOfflineMode>
+    
+    <!-- use thumbnails for base64 images -->
+    <!-- this may slowdown viewing tests -->
+    <thumbnailForBase64>false</thumbnailForBase64>
+
+    <!-- title of the document -->
+    <documentTitle>eSurety</documentTitle>
+
+   <reportName>
+		 <![CDATA[
+               
+               <img src="logo.png"  style="width:50px;height:40px;" ;>
+               <font size="5" >   AUTOMATION  TEST  RESULTS    </font>
+              
+                ]]>
+		</reportName>
+				
+    <!-- timestamp format -->
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    $('.logo-container.grey darken-2').css('display','block');
+                });
+            ]]>
+        </scripts>
+      
+    <!-- custom styles -->
+    <styles>
+     
+    </styles>
+
+  </configuration>
+</extentreports>

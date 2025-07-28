@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>standard</theme>
+    
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- enable or disable timeline on dashboard -->
+        <enableTimeline>true</enableTimeline>
+        
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>Automation Execution Result</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+		
+        <reportName>
+		 <![CDATA[
+                <img src='https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/sssvfnewhku9z4tqmovr' />
+                <font size="5"> HBD HEALTH CHECK AUTOMATION RESULTS </font> 
+            ]]>
+		</reportName>
+		
+		<!-- timestamp format -->
+		<timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+		
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    $('.logo-container.blue.darken-2').css('display','none');
+                });
+            ]]>
+        </scripts>
+        
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+                 .report-name { padding-left: 0px; } .report-name > img { float: left;height: 10%;margin-left: -70px;margin-top: -10px;width: 15%;font-weight: bold; }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
